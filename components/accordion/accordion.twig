@@ -1,0 +1,44 @@
+{#
+/*
+   ___  ___  __  _____  _____  _______________ 
+  / _ \/ _ \/ / / / _ \/ __/ |/ /_  __/  _/ _ |
+ / ___/ , _/ /_/ / // / _//    / / / _/ // __ |
+/_/  /_/|_|\____/____/___/_/|_/ /_/ /___/_/ |_|
+                                               
+------------------------------------------------------------------------------
+ACCORDION COMPONENT
+------------------------------------------------------------------------------
+This component is based on the USWDS accordion.njk file.
+(node_modules/uswds/src/components/06-accordion/accordion.njk)
+Change made: item.content filter set to raw to mark var value as being 'safe'
+
+Variables expected by this component:
+
+- accordion.variant: String - default | bordered
+- accordion.id_prefix: String - Sets BUTTON aria-control and DIV id  
+- accordion.multiselectable: Boolean - Opens several tabs without closing others
+- accordion.items: Array - Populates each accordion tab
+    - item.expanded: Boolean - Sets accordion tab close/open (default 'false')
+    - item.content: Object - Accordion tab content 
+    - item.title: String - Accordion tab Label
+------------------------------------------------------------------------------
+*/
+#}
+
+<div class="usa-accordion{%
+  if accordion.variant %} usa-accordion--{{ accordion.variant }}{% endif %}"{%
+  if accordion.multiselectable == true %} aria-multiselectable="true"{% endif %}>
+  {% for item in accordion.items %}
+      <!-- Use the accurate heading level to maintain the document outline -->
+      <h2 class="usa-accordion__heading">
+        <button class="usa-accordion__button"
+          aria-expanded="{{ item.expanded | default('false') }}"
+          aria-controls="{{ accordion.id_prefix }}{{ item.id }}">
+          {{ item.title }}
+        </button>
+      </h2>
+      <div id="{{ accordion.id_prefix }}{{ item.id }}" class="usa-accordion__content usa-prose">
+        {{ item.content | raw }}
+      </div>
+  {% endfor %}
+</div>

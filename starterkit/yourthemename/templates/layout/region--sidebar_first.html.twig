@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Depot theme override to dsplay a region.
+ * (this overrides uswds_base/templates/layout/region--sidebar_first.html.twig file)
+ *
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ */
+#}
+
+
+
+
+<div id="facetFilters">
+
+{% include "@uswds/accordion/accordion.twig" with {'items': uno , 'title' : "Filters" , 'id_prefix': "sidebar"}  %}
+
+</div>
+
+
+
+{{ attach_library('prudentia/accordion') }}

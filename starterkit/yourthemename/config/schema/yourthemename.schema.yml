@@ -1,0 +1,3 @@
+yourthemename.settings:
+  type: theme_settings
+  label: 'yourthemename settings'

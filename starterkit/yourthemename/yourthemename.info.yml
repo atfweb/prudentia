@@ -1,0 +1,34 @@
+type: theme
+base theme: prudentia
+
+name: 'yourthemename'
+description: 'Uses Prudentia theme'
+package: 'USWDS Base'
+core: 8.x
+logo: '../prudentia/logo.png'
+screenshot: '../prudentia/screenshot.png'
+
+regions:
+  header_top: 'Above Header'
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  secondary_menu: 'Secondary Menu'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  hero: 'Hero'
+  content: 'Content'
+  footer_menu: 'Footer Menu'
+  footer: 'Primary Footer'
+  footer_secondary: 'Secondary Footer'
+
+component-libraries:
+  uswds:
+    paths:
+     - ../prudentia/components
+    # - ../../contrib/prudentia/components
+  yourthemename:
+    paths:
+     - components
