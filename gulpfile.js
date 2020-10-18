@@ -8,7 +8,9 @@
 ========================================
 ----------------------------------------
 USWDS SASS GULPFILE
-----------------------------------------
+This file have the Gulp tasks for the Prudentia theme
+Use this file ONLY if need to run gulp tasks ( Development Only )
+----------------------------------------------------------------
 */
 
 const autoprefixer = require("autoprefixer");
