@@ -30,7 +30,8 @@ libraries:
 component-libraries:
   uswds:
     paths:
-     - ../../contrib/prudentia/components
+    - components/prudentia
+    #  - ../../contrib/prudentia/components
   yourthemename:
     paths:
      - components
