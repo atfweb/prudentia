@@ -24,14 +24,11 @@ regions:
   footer: 'Primary Footer'
   footer_secondary: 'Secondary Footer'
 
-libraries:
-  - 'yourthemename/assets'
-
 component-libraries:
   uswds:
     paths:
-    - components/prudentia
-    #  - ../../contrib/prudentia/components
+     - components/prudentia
+
   yourthemename:
     paths:
      - components
