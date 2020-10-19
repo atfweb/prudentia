@@ -75,6 +75,13 @@ gulp.task("copy-uswds-setup", () => {
     .pipe(gulp.dest(`${PROJECT_SASS_SRC}`));
 });
 
+gulp.task("copy-prudentia-setup", () => {
+  return gulp
+    // you might need to replace 'web' with your project root directory name
+    .src("../../../../web/themes/contrib/prudentia/sass/*.scss")
+    .pipe(gulp.dest(`${PROJECT_SASS_SRC}`));
+});
+
 gulp.task("copy-uswds-fonts", () => {
   return gulp.src(`${uswds}/fonts/**/**`).pipe(gulp.dest(`${FONTS_DEST}`));
 });
@@ -124,6 +131,7 @@ gulp.task(
   gulp.series(
     "directories",
     "copy-uswds-setup",
+    "copy-prudentia-setup",
     "copy-uswds-fonts",
     "copy-uswds-images",
     "copy-uswds-js",
