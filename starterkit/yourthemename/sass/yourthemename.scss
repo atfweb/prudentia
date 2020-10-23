@@ -10,6 +10,8 @@
 
 // -------------------------------------
 // Import individual Prudentia theme settings
+// thinking that we need to append ../../contrib/ if prudentia is a contrib module
+  
 
 //  @import "../../../contrib/prudentia/sass/prudentia-theme-general";
 //  @import "../../../contrib/prudentia/sass/prudentia-theme-typography";
@@ -21,9 +23,10 @@
 //@import "uswds-theme-components";
 // @import "../../../contrib/prudentia/sass/prudentia-theme-components";
 
-
+@import "prudentia";
 
 // -------------------------------------
 // Import theme custom styles
+// @import "prudentia-theme-custom-styles";
 
 @import "yourthemename-theme-custom-styles";
