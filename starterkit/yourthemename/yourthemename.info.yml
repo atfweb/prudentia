@@ -27,11 +27,9 @@ regions:
 libraries:
   - 'yourthemename/assets'
 
+# To start using Prudentia components and your theme components
+# remember to install and enable https://www.drupal.org/project/components
 component-libraries:
-  uswds:
-    paths:
-     - components/prudentia
-
   yourthemename:
     paths:
      - components
