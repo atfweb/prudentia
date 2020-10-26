@@ -34,6 +34,8 @@ PATHS
   names
 ----------------------------------------
 */
+// Prudentia theme Sass source directory
+const PRUDENTIA_SASS_SRC = "../../contrib/prudentia/sass";
 
 // Project Sass source directory
 const PROJECT_SASS_SRC = "./sass";
@@ -100,12 +102,13 @@ gulp.task("build-sass", function(done) {
   ];
   return (
     gulp
-      .src([`${PROJECT_SASS_SRC}/*.scss`])
+      .src([`${PROJECT_SASS_SRC}/*.scss`, `${PRUDENTIA_SASS_SRC}/*.scss`])
       .pipe(sourcemaps.init({ largeFile: true }))
       .pipe(
         sass.sync({
           includePaths: [
             `${PROJECT_SASS_SRC}`,
+            `${PRUDENTIA_SASS_SRC}`,
             `${uswds}/scss`,
             `${uswds}/scss/packages`
           ]
