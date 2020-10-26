@@ -34,14 +34,9 @@ PATHS
   names
 ----------------------------------------
 */
-// Prudentia theme Sass source directory
-const PRUDENTIA_SASS_SRC = "../../contrib/prudentia/sass";
 
 // Project Sass source directory
 const PROJECT_SASS_SRC = "./sass";
-
-// Project components source directory
-const PROJECT_PRUDENTIA_COMPONENTS_SRC = "./components/prudentia";
 
 // Images destination
 const IMG_DEST = "./assets/img";
@@ -72,27 +67,13 @@ gulp.task('directories', function () {
     .pipe(gulp.dest('./assets/fonts'))
     .pipe(gulp.dest('./assets/js'))
     .pipe(gulp.dest('./assets/css'))
-    .pipe(gulp.dest('./components/prudentia'));
+    .pipe(gulp.dest('./components'));
 });
 
 gulp.task("copy-uswds-setup", () => {
   return gulp
     .src(`${uswds}/scss/theme/**/**`)
     .pipe(gulp.dest(`${PROJECT_SASS_SRC}`));
-});
-
-gulp.task("copy-prudentia-setup", () => {
-  return gulp
-    // you might need to replace 'web' with your project root directory name
-    .src("../../../../web/themes/contrib/prudentia/sass/*.scss")
-    .pipe(gulp.dest(`${PROJECT_SASS_SRC}`));
-});
-
-gulp.task("copy-prudentia-components", () => {
-  return gulp
-    // you might need to replace 'web' with your project root directory name
-    .src("../../../../web/themes/contrib/prudentia/components/**/**")
-    .pipe(gulp.dest(`${PROJECT_PRUDENTIA_COMPONENTS_SRC}`));
 });
 
 gulp.task("copy-uswds-fonts", () => {
@@ -119,13 +100,12 @@ gulp.task("build-sass", function(done) {
   ];
   return (
     gulp
-      .src([`${PROJECT_SASS_SRC}/*.scss`, `${PRUDENTIA_SASS_SRC}/*.scss`])
+      .src([`${PROJECT_SASS_SRC}/*.scss`])
       .pipe(sourcemaps.init({ largeFile: true }))
       .pipe(
         sass.sync({
           includePaths: [
             `${PROJECT_SASS_SRC}`,
-            `${PRUDENTIA_SASS_SRC}`,
             `${uswds}/scss`,
             `${uswds}/scss/packages`
           ]
@@ -145,11 +125,9 @@ gulp.task(
   gulp.series(
     "directories",
     "copy-uswds-setup",
-    // "copy-prudentia-setup",
     "copy-uswds-fonts",
     "copy-uswds-images",
     "copy-uswds-js",
-    "copy-prudentia-components",
     "build-sass"
   )
 );
