@@ -17,4 +17,8 @@ i.e.
 -----------------------------------------------
 */
 
-//body {background-color: rgb(213, 234, 255)} 
+// body {background-color:blueviolet} 
+
+.usa-social-link--instagram {
+   @include add-background-svg(instagram, "../../../../contrib/prudentia/assets/img/social-icons");
+}
