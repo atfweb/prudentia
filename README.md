@@ -65,7 +65,7 @@ tooling:
 - In the **gulpfile.js** file inside the "*starterkit/yourthemename*" folder, you might need to replace  the instance of '**web**' with the name of your project webroot name.
 
 
-**References: **
+**References:**
 - Drupal and Lando ( https://stephencross.com/2019/11/29/drupal-8-and-lando/)
 - USWDS-GULP (https://github.com/uswds/uswds-gulp )
 - USWDS_BASE theme (https://www.drupal.org/project/uswds_base )
