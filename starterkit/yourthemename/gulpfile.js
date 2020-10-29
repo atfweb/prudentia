@@ -102,7 +102,7 @@ gulp.task("build-sass", function(done) {
   ];
   return (
     gulp
-      .src([`${PROJECT_SASS_SRC}/*.scss`, `${PRUDENTIA_SASS_SRC}/*.scss`])
+      .src([`${PROJECT_SASS_SRC}/*.scss`])
       .pipe(sourcemaps.init({ largeFile: true }))
       .pipe(
         sass.sync({
