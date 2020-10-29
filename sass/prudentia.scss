@@ -6,25 +6,6 @@
 -----------------------------------------------
 */
 
-// --------------------------------------------
-// Import individual theme settings
-
-@import "uswds-theme-general";
-@import "uswds-theme-typography";
-@import "uswds-theme-spacing";
-@import "uswds-theme-color";
-@import "uswds-theme-utilities";
-
-@import "prudentia-theme-general";
-@import "prudentia-theme-typography";
-@import "prudentia-theme-spacing";
-@import "prudentia-theme-color";
-@import "prudentia-theme-utilities";
-
-// components import needs to be last
-@import "uswds-theme-components";
-@import "prudentia-theme-components";
-
 // -------------------------------------
 // Import individual USWDS packages...
 // See https://designsystem.digital.gov/components/
