@@ -1,32 +1,32 @@
 /*
-* * * * * ==============================
-* * * * * ==============================
-* * * * * ==============================
-* * * * * ==============================
-========================================
-========================================
-========================================
+********************
+YOUR THEME NAME HERE
+********************
 */
 
-// -------------------------------------
-// Import individual Prudentia theme settings
-// thinking that we need to append ../../contrib/ if prudentia is a contrib module
-  
+// Import individual theme settings
+@import "uswds-theme-general";
+@import "uswds-theme-typography";
+@import "uswds-theme-spacing";
+@import "uswds-theme-color";
+@import "uswds-theme-utilities";
 
-//  @import "../../../contrib/prudentia/sass/prudentia-theme-general";
-//  @import "../../../contrib/prudentia/sass/prudentia-theme-typography";
-//  @import "../../../contrib/prudentia/sass/prudentia-theme-spacing";
-//  @import "../../../contrib/prudentia/sass/prudentia-theme-color";
-//  @import "../../../contrib/prudentia/sass/prudentia-theme-utilities";
+// Import individual Prudentia theme settings
+@import "prudentia-theme-general";
+@import "prudentia-theme-typography";
+@import "prudentia-theme-spacing";
+@import "prudentia-theme-color";
+@import "prudentia-theme-utilities";
+
+// Import your theme individual settings here
+
 
 // components import needs to be last
-//@import "uswds-theme-components";
-// @import "../../../contrib/prudentia/sass/prudentia-theme-components";
+@import "prudentia-theme-components";
 
+// this imports uswds packages and Prudentia custom-styles
 @import "prudentia";
 
 // -------------------------------------
 // Import theme custom styles
-// @import "prudentia-theme-custom-styles";
-
 @import "yourthemename-theme-custom-styles";
