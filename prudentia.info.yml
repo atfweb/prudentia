@@ -1,8 +1,8 @@
+name: 'Prudentia'
 type: theme
+description: 'Uses the USWDS Base theme, requires node and gulp-sass to get USWDS assets and compile sass'
 base theme: uswds_base
 
-name: 'Prudentia'
-description: 'Uses the USWDS Base and requires download of the USWDS assets'
 package: 'USWDS Base'
 core: 8.x
 logo: 'logo.png'

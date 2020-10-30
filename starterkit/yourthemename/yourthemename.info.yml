@@ -1,8 +1,8 @@
-type: theme
-base theme: prudentia
-
 name: 'yourthemename'
-description: 'Uses Prudentia theme'
+type: theme
+description: 'Uses the Prudentia theme, requires node and gulp-sass to get USWDS assets and compile sass'
+base theme: Prudentia
+
 package: 'USWDS Base'
 core: 8.x
 logo: 'logo.png'
