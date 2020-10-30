@@ -64,6 +64,8 @@ tooling:
 
 - In the **gulpfile.js** file inside the "*starterkit/yourthemename*" folder, you might need to replace  the instance of '**web**' with the name of your project webroot name.
 
+- You need to install/enable **Components Library** Drupal module (https://www.drupal.org/project/components) to use the Pruedntia components 
+
 
 **References:**
 - Drupal and Lando ( https://stephencross.com/2019/11/29/drupal-8-and-lando/)
