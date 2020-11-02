@@ -1,7 +1,7 @@
 name: 'yourthemename'
 type: theme
 description: 'Uses the Prudentia theme, requires node and gulp-sass to get USWDS assets and compile sass'
-base theme: Prudentia
+base theme: prudentia
 
 package: 'USWDS Base'
 core: 8.x
