@@ -8,7 +8,7 @@ dependencies:
 id: yourthemename_content
 theme: yourthemename
 region: content
-weight: 30
+weight: -2
 provider: null
 plugin: system_main_block
 settings:

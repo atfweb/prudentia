@@ -6,7 +6,7 @@ dependencies:
 id: yourthemename_local_tasks
 theme: yourthemename
 region: content
-weight: 20
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

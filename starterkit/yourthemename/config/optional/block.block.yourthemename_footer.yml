@@ -10,7 +10,7 @@ dependencies:
 id: yourthemename_footer
 theme: yourthemename
 region: footer_menu
-weight: 0
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

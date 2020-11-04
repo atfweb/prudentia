@@ -6,7 +6,7 @@ dependencies:
 id: yourthemename_page_title
 theme: yourthemename
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

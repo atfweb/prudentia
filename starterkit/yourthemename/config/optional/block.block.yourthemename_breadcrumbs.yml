@@ -8,7 +8,7 @@ dependencies:
 id: yourthemename_breadcrumbs
 theme: yourthemename
 region: breadcrumb
-weight: -100
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:
