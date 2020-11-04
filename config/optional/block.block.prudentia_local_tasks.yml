@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - uswds_base_subtheme
-id: uswds_base_subtheme_local_tasks
-theme: uswds_base_subtheme
+    - prudentia
+id: prudentia_local_tasks
+theme: prudentia
 region: content
-weight: 20
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

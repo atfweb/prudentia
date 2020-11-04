@@ -4,11 +4,11 @@ dependencies:
   module:
     - system
   theme:
-    - uswds_base_subtheme
-id: uswds_base_subtheme_content
-theme: uswds_base_subtheme
+    - prudentia
+id: prudentia_content
+theme: prudentia
 region: content
-weight: 30
+weight: -2
 provider: null
 plugin: system_main_block
 settings:

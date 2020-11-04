@@ -6,11 +6,11 @@ dependencies:
   module:
     - system
   theme:
-    - uswds_base_subtheme
-id: uswds_base_subtheme_footer
-theme: uswds_base_subtheme
+    - prudentia
+id: prudentia_footer
+theme: prudentia
 region: footer_menu
-weight: 0
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

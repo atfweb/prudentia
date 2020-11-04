@@ -4,11 +4,11 @@ dependencies:
   module:
     - system
   theme:
-    - uswds_base_subtheme
-id: uswds_base_subtheme_messages
-theme: uswds_base_subtheme
+    - prudentia
+id: prudentia_messages
+theme: prudentia
 region: highlighted
-weight: -50
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:

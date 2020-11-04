@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   theme:
-    - uswds_base_subtheme
-id: uswds_base_subtheme_page_title
-theme: uswds_base_subtheme
+    - prudentia
+id: prudentia_page_title
+theme: prudentia
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

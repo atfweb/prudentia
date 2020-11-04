@@ -6,11 +6,11 @@ dependencies:
   module:
     - system
   theme:
-    - uswds_base_subtheme
-id: uswds_base_subtheme_main_menu
-theme: uswds_base_subtheme
+    - prudentia
+id: prudentia_main_menu
+theme: prudentia
 region: primary_menu
-weight: 10
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -19,5 +19,5 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 2
+  depth: 1
 visibility: {  }
