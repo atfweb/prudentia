@@ -5,6 +5,24 @@
 /_/  /_/|_|\____/____/___/_/|_/ /_/ /___/_/ |_|
 -----------------------------------------------
 */
+// If working with PRUDENTIA only as theme
+// you might need to uncomment the following uswds and prudentia
+// individual import settings - otherwise it will use the default
+// settings here: node_modules/uswds/dist/scss/packages/_required.scss
+
+// Import individual theme settings
+// @import "uswds-theme-general";
+// @import "uswds-theme-typography";
+// @import "uswds-theme-spacing";
+// @import "uswds-theme-color";
+// @import "uswds-theme-utilities";
+
+// Import individual Prudentia theme settings
+// @import "prudentia-theme-general";
+// @import "prudentia-theme-typography";
+// @import "prudentia-theme-spacing";
+// @import "prudentia-theme-color";
+// @import "prudentia-theme-utilities";
 
 // -------------------------------------
 // Import individual USWDS packages...
