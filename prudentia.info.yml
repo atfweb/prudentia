@@ -25,7 +25,7 @@ regions:
   footer_secondary: 'Secondary Footer'
 
 libraries:
-  - 'prudentia/assets'
+  - '../../contrib/prudentia/assets'
 
 component-libraries:
   uswds:
