@@ -254,10 +254,10 @@ function prudentia_form_system_theme_settings_alter(&$form, FormStateInterface &
       ],
     ],
 
-    'prudentia_instagram' => [
+    'uswds_instagram' => [
       '#type' => 'textfield',
       '#title' => t('Instagram'),
-      '#default_value' => theme_get_setting('prudentia_instagram'),
+      '#default_value' => theme_get_setting('uswds_instagram'),
       '#states' => [
       'visible' => [
         ':input[name="uswds_footer_agency"]' => ['checked' => TRUE],
