@@ -25,7 +25,8 @@ regions:
   footer_secondary: 'Secondary Footer'
 
 libraries:
-  - '../../contrib/prudentia/assets'
+  # if Prudentia is set as a theme default uncomment this
+  #  - prudentia/assets
 
 component-libraries:
   uswds:
