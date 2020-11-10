@@ -1,6 +1,6 @@
 name: 'yourthemename'
 type: theme
-description: 'It is based on Prudentia theme. It requires node and gulp-sass to get USWDS assets and compile sass'
+description: 'This theme is based on Prudentia theme. It requires node and gulp-sass to get USWDS assets and compile sass'
 base theme: prudentia
 core_version_requirement: ^8.7.7 || ^9
 
@@ -36,3 +36,4 @@ component-libraries:
   yourthemename:
     paths:
      - components
+
