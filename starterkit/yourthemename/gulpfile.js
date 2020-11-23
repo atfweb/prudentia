@@ -131,7 +131,7 @@ gulp.task(
     "copy-uswds-fonts",
     "copy-uswds-images",
     "copy-uswds-js",
-    "build-sass"
+    "build-sass",
   )
 );
 
