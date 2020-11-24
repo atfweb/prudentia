@@ -1,0 +1,16 @@
+{
+  "name": "prudentia",
+  "version": "1.0.0",
+  "description": "A Drupal uswds based theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atfweb/prudentia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
