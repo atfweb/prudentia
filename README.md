@@ -25,7 +25,7 @@ services:
   node:
     type: node
     build:
-      - npm install --prefix ./web/themes/custom/yourthemename/ autoprefixer gulp gulp-replace sass gulp-sass gulp-sourcemaps gulp-postcss postcss-csso postcss uswds uswds-gulp@github:uswds/uswds-gulp --save-dev
+      - npm install --prefix ./docroot/themes/custom/yourthemename/
     globals:
       gulp-cli: latest
       
