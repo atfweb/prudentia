@@ -5,3 +5,4 @@ assets:
       assets/css/prudentia.css: {}
   js:
     assets/js/uswds.min.js: {}
+    assets/js/uswds-init.min.js: {}
