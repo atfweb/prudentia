@@ -71,12 +71,6 @@ gulp.task('directories', function () {
     .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task("copy-uswds-setup", () => {
-  return gulp
-    .src(`${uswds}/scss/theme/**/**`)
-    .pipe(gulp.dest(`${PROJECT_SASS_SRC}`));
-});
-
 gulp.task("copy-uswds-fonts", () => {
   return gulp.src(`${uswds}/fonts/**/**`).pipe(gulp.dest(`${FONTS_DEST}`));
 });
@@ -108,6 +102,7 @@ gulp.task("build-sass", function(done) {
           includePaths: [
             `${PROJECT_SASS_SRC}`,
             `${uswds}/scss`,
+            `${uswds}/scss/theme`,
             `${uswds}/scss/packages`
           ]
         })
@@ -125,7 +120,6 @@ gulp.task(
   "init",
   gulp.series(
     "directories",
-    "copy-uswds-setup",
     "copy-uswds-fonts",
     "copy-uswds-images",
     "copy-uswds-js",
