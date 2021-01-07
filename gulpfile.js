@@ -8,9 +8,7 @@
 ========================================
 ----------------------------------------
 USWDS SASS GULPFILE
-This file have the Gulp tasks for the Prudentia theme
-Use this file ONLY if need to run gulp tasks ( Development Only )
-----------------------------------------------------------------
+----------------------------------------
 */
 
 const autoprefixer = require("autoprefixer");
@@ -21,7 +19,7 @@ const postcss = require("gulp-postcss");
 const replace = require("gulp-replace");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
-const uswds = require("./node_modules/uswds-gulp/config/uswds");
+const uswds = require("./config/uswds");
 
 
 sass.compiler = require("sass");
@@ -36,6 +34,8 @@ PATHS
   names
 ----------------------------------------
 */
+// Prudentia theme Sass source directory
+const PRUDENTIA_SASS_SRC = "../../contrib/prudentia/sass";
 
 // Project Sass source directory
 const PROJECT_SASS_SRC = "./sass";
@@ -68,8 +68,10 @@ gulp.task('directories', function () {
     .pipe(gulp.dest('./assets/img'))
     .pipe(gulp.dest('./assets/fonts'))
     .pipe(gulp.dest('./assets/js'))
-    .pipe(gulp.dest('./assets/css'));
+    .pipe(gulp.dest('./assets/css'))
+    .pipe(gulp.dest('./components'));
 });
+
 
 gulp.task("copy-uswds-fonts", () => {
   return gulp.src(`${uswds}/fonts/**/**`).pipe(gulp.dest(`${FONTS_DEST}`));
@@ -101,6 +103,7 @@ gulp.task("build-sass", function(done) {
         sass.sync({
           includePaths: [
             `${PROJECT_SASS_SRC}`,
+            `${PRUDENTIA_SASS_SRC}`,
             `${uswds}/scss`,
             `${uswds}/scss/theme`,
             `${uswds}/scss/packages`
@@ -123,7 +126,7 @@ gulp.task(
     "copy-uswds-fonts",
     "copy-uswds-images",
     "copy-uswds-js",
-    "build-sass"
+    "build-sass",
   )
 );
 
