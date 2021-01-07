@@ -4,7 +4,7 @@ INTRODUCTION
 This theme is a sub-theme of uswds_base drupal theme. 
 This sub-theme requires the full USWDS assets folder.
 The steps below assume you are using a docker container to run Drupal app and you Lando to spin services and tooling in your app.
-It uses Gulp to compile SASS.
+It uses Gulp to compile SASS and copy USWDS assets.
 
 
 INSTALLATION
