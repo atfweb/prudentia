@@ -5,6 +5,7 @@ base theme: uswds_base
 
 package: 'USWDS Base'
 core: 8.x
+core_version_requirement: ^8 || ^9
 logo: 'logo.png'
 screenshot: 'screenshot.png'
 
