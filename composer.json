@@ -4,5 +4,8 @@
     "type": "drupal-theme",
     "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "drupal/uswds_base": "^2.4",
+        "drupal/components": "^2.2"
+    }
 }

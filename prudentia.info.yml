@@ -6,6 +6,8 @@ base theme: uswds_base
 package: 'USWDS Base'
 core: 8.x
 core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:components
 logo: 'logo.png'
 screenshot: 'screenshot.png'
 
