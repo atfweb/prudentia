@@ -8,10 +8,7 @@ It uses GULP to compile SASS and copy USWDS assets.
 
 INSTALLATION
 ------------
-1. Install uswds_base theme 
-`lando composer require 'drupal/uswds_base:^2.4'`
-
-2. Install Prudentia theme
+1. Install Prudentia theme
 `lando composer require atf/prudentia`
 
 3. Copy the "**yourthemename**" folder from the "*/prudentia/starterkit*" dir to the "*themes/custom*" directory in your codebase.
