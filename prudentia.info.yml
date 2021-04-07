@@ -31,7 +31,7 @@ libraries:
   # if Prudentia is set as a theme default uncomment this
   #  - prudentia/assets
 
-component-libraries:
-  uswds:
-    paths:
-     - ../../contrib/prudentia/components
+components:
+  namespaces:
+    uswds:
+      - ../../contrib/prudentia/components
