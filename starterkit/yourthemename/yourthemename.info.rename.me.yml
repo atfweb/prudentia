@@ -27,12 +27,9 @@ regions:
 libraries:
   - 'yourthemename/assets'
 
-component-libraries:
-  uswds:
-    paths:
+components:
+  namespaces:
+    uswds:
      - ../../../themes/contrib/prudentia/components
-
-  yourthemename:
-    paths:
+    yourthemename:
      - components
-

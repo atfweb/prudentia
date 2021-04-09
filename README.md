@@ -8,10 +8,7 @@ It uses GULP to compile SASS and copy USWDS assets.
 
 INSTALLATION
 ------------
-1. Install uswds_base theme 
-`lando composer require 'drupal/uswds_base:^2.4'`
-
-2. Install Prudentia theme
+1. Install Prudentia theme
 `lando composer require atf/prudentia`
 
 3. Copy the "**yourthemename**" folder from the "*/prudentia/starterkit*" dir to the "*themes/custom*" directory in your codebase.
@@ -60,7 +57,8 @@ tooling:
   - Runs on lando rebuild and installs  Node and NPM in your docker container, adds gulp and other packages and their dependencies to the 'node_modules' in /themes.contrib/prudentia directory.
   - Assumes your webroot folder name is "web". You might need to change it with "docroot" or with the name of your webroot folder. 
 
-- You need to install/enable **Components Library** Drupal module (https://www.drupal.org/project/components) to use the Prudentia components 
+- The Prudentia theme depends on the Components Library Drupal module (https://www.drupal.org/project/components) and the module must be enabled to enable the theme. If you install the theme via composer the module will be pulled into your codebase automatically.
+
 
 - This theme uses as reference the uswds-gulp repo to configure npm and gulp files.
 
