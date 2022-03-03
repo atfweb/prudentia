@@ -1,24 +1,10 @@
 {
-  "name": "prudentia",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "Prudentia",
+  "private": true,
+  "author": "ATF",
+  "license": "TBD",
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^8.0.0",
-    "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "postcss": "^7.0.0",
-    "postcss-csso": "^4.0.0",
-    "sass": "^1.26.10",
-    "uswds": "~2.10.0"
+    "@uswds/compile": "^1.0.0-alpha.0",
+    "uswds": "^2.13.1"
   }
 }
