@@ -4,8 +4,6 @@
  / ___/ , _/ /_/ / // / _//    / / / _/ // __ |
 /_/  /_/|_|\____/____/___/_/|_/ /_/ /___/_/ |_|
 -----------------------------------------------
-PRUDENTIA 1.0.0
------------------------------------------------
 GENERAL SETTINGS
 -----------------------------------------------
 In this file you can override the USWDS theme 
@@ -14,5 +12,8 @@ General settings.
 Read more about settings and
 USWDS style tokens in the documentation:
 https://designsystem.digital.gov/design-tokens
------------------------------------------------
+
+Default USWDS General settings:
+node_modules/uswds/dist/scss/settings/_settings-general.scss
+------------------------------------------------------------
 */
