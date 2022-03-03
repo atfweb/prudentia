@@ -4,7 +4,7 @@
  / ___/ , _/ /_/ / // / _//    / / / _/ // __ |
 /_/  /_/|_|\____/____/___/_/|_/ /_/ /___/_/ |_|
 -----------------------------------------------
-USWDS THEME CUSTOM STYLES
+PRUDENTIA THEME CUSTOM STYLES
 -----------------------------------------------
 !! Copy this file to your project's
    sass root. Don't edit the version
@@ -16,7 +16,3 @@ i.e.
 @include u-padding-right('05');
 -----------------------------------------------
 */
-
-.usa-social-link--instagram {
-   @include add-background-svg(instagram, "../../../../contrib/prudentia/assets/img/social-icons");
-}
