@@ -1,8 +1,8 @@
 name: 'yourthemename'
 type: theme
-description: 'This theme is based on Prudentia theme. It requires node and gulp-sass to get USWDS assets and compile sass'
+description: 'This theme is based on Prudentia theme. It requires uswds and @uswds/compile packages to get USWDS assets and compile sass'
 base theme: prudentia
-core_version_requirement: ^8.7.7 || ^9
+core_version_requirement: ^8 || ^9
 
 package: 'USWDS Base'
 logo: 'logo.png'

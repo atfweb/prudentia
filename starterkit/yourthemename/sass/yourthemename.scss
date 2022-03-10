@@ -4,30 +4,34 @@ YOUR THEME NAME HERE
 ********************
 */
 
-// Import individual theme settings
-@import "uswds-theme-general";
-@import "uswds-theme-typography";
-@import "uswds-theme-spacing";
-@import "uswds-theme-color";
-@import "uswds-theme-utilities";
-
-// Import individual Prudentia theme settings
-@import "prudentia-theme-general";
-@import "prudentia-theme-typography";
-@import "prudentia-theme-spacing";
-@import "prudentia-theme-color";
-@import "prudentia-theme-utilities";
-
-// Import your theme individual settings here
+// Import individual USWDS theme settings
+@import "../node_modules/uswds/dist/scss/theme/_uswds-theme-general.scss";
+@import "../node_modules/uswds/dist/scss/theme/_uswds-theme-typography.scss";
+@import "../node_modules/uswds/dist/scss/theme/_uswds-theme-spacing.scss";
+@import "../node_modules/uswds/dist/scss/theme/_uswds-theme-color.scss";
+@import "../node_modules/uswds/dist/scss/theme/_uswds-theme-utilities.scss";
 
 
-// components import needs to be last
-@import "uswds-theme-components";
-@import "prudentia-theme-components";
+// Import individual PRUDENTIA theme settings
+@import "../../contrib/prudentia/sass/_prudentia-theme-general.scss";
+@import "../../contrib/prudentia/sass/_prudentia-theme-typography.scss";
+@import "../../contrib/prudentia/sass/_prudentia-theme-spacing.scss";
+@import "../../contrib/prudentia/sass/_prudentia-theme-color.scss";
+@import "../../contrib/prudentia/sass/_prudentia-theme-utilities.scss";
 
-// this imports uswds packages and Prudentia custom-styles
-@import "prudentia";
 
-// -------------------------------------
-// Import theme custom styles
-@import "yourthemename-theme-custom-styles";
+// Import individual yourthemename settings
+@import '_yourthemename-theme-color';
+
+// Import Components - It needs to be after theme settings
+@import "../node_modules/uswds/dist/scss/theme/uswds-theme-components";
+@import "../../contrib/prudentia/sass/prudentia-theme-components";
+
+// Import uswds packages
+@import "uswds";
+
+// Prudentia custom-styles
+@import "../../contrib/prudentia/sass/prudentia-theme-custom-styles.scss";
+
+// yourthemename custom styles
+@import "_yourthemename-theme-custom-styles.scss";
