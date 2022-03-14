@@ -15,6 +15,8 @@ _**Note**: As March 2022, to use the USWDS 2.13.1 version we need the uswds_base
 
 2. Run: `lando composer require 'drupal/uswds_base:^2.13@alpha'`
 
+NOTE: Steps 3 thru 7 can be replaced by running this script from your web root:  `. themes/contrib/prudentia/makesubtheme.sh your_subtheme_machine_name`
+
 3. Copy the /web/themes/contrib/prudentia/starterkit/yourthemename folder 
 
 4. Paste the yourthemename folder in the /web/themes/custom/ directory
